@@ -38,7 +38,7 @@ body{
 
 .bacgroundimage{
    /* background: linear-gradient(rgba(32, 32, 221, 0.5), rgba(32, 32, 221, 0.5));*/
-    background: url("../image/profil.jpg");
+    background: url("image/profil.jpg");
     box-shadow: inset 500px 0px 0px 500px rgba(32, 32, 221, 0.336);
     background-size: cover;
     width: 100%;
