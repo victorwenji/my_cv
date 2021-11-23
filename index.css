@@ -1,3 +1,6 @@
+
+@import"bootstrap-4.4.1-dist/css/bootstrap.css";
+    
 * {
     box-sizing: border-box;
 }
@@ -15,25 +18,41 @@ body{
     width: 42%;
     margin-right: 2%;
 }
+.buttonsent{
+
+}
+.circleButton {
+    background-color: #E34756;
+    border-style: none;
+    border-radius: 100%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+    /* margin-top: -5%; */
+    top: 42%;
+    right: 60%;
+}
 
 .bacgroundimage{
-    background: linear-gradient(rgba(32, 32, 221, 0.5), rgba(32, 32, 221, 0.5));
+   /* background: linear-gradient(rgba(32, 32, 221, 0.5), rgba(32, 32, 221, 0.5));*/
     background: url("../image/profil.jpg");
-     box-shadow: inset 500px 0px 0px 500px rgba(32, 32, 221, 0.336);
+    box-shadow: inset 500px 0px 0px 500px rgba(32, 32, 221, 0.336);
     background-size: cover;
     width: 100%;
     height: 80%;
     border-radius: 5px 5px 0px 0px;
     padding: 1.5%;
     opacity: 0, 5;
-   
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
 .seachbar{
     background-color: rgb(250, 248, 250);
-    width: 97%;
+    width: 100%;
     height: 25%;
     border-radius: 5px;
     display: flex;
@@ -53,6 +72,10 @@ body{
     background-color: rgb(250, 248, 250);
     outline: none;
     font-size: 15px;  
+}
+.buttonsent{
+    height: 40px;
+    width: 40px;
 }
 .paersonalinformation{
     display: flex;
@@ -83,13 +106,11 @@ body{
     width: 100%;
     padding: 3%;
 }
-
 .birthday {
     display: flex;
     flex-flow: row;
     width: 100%;
 }
-
 .address {
     margin-top: 3%;
     display: flex;
@@ -103,7 +124,6 @@ body{
     flex-flow: row;
     width: 100%;
 }
-
 .mail {
     margin-top: 3%;
     display: flex;
@@ -402,5 +422,18 @@ body{
         flex-flow: column;
         width: 100%;
     }
-    
+    .circleButton {
+        background-color: #E34756;
+        border-style: none;
+        border-radius: 100%;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+        /* margin-top: -5%; */
+        top: 46%;
+        right: 8%;
+    }
 }
