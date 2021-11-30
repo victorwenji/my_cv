@@ -373,22 +373,21 @@ body{
     border-radius: 20px;
 }
 
-
-.bigscrollTwo{
+ /*.bigscrollTwo{
     width: 98%;
     padding: 2%;
     height: 61%;
     background-color: white;
     margin-bottom:3%;
-}
-.scrollTwo {
+}*/
+/*.scrollTwo {
     overflow-y: scroll;
-    /*display: flex;*/
+    /*display: flex;/* 0/*
     flex-flow: column;
     height: 100%;
     border-radius: 0px 0px 5px 5px;
-    /*margin-bottom: 3%;*/
-}
+    /*margin-bottom: 3%;*/ /*
+}*//*
 .scrollTwo::-webkit-scrollbar{
     width: 8px;
 
@@ -401,7 +400,7 @@ body{
 .scrollTwo::-webkit-scrollbar-thumb{
     background-color: rgb(54, 53, 53);
     border-radius: 20px;
-}
+}*/
 @media (max-width: 600px) {
     .contentAll {
         height: 100%;
@@ -409,6 +408,7 @@ body{
         display: flex;
         flex-flow: column;
     }
+
     .leftcontent {
         width: 100%;
         margin-right: 2%;
