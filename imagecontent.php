@@ -19,11 +19,11 @@
     <div class="paersonalinformation" id="paersonalinformation">
         <img src="image/profil.jpg" alt="" class="profilimage">
         <div style="margin-left: 20px;">
-            <div class="nom"> <b><?php echo $infoNom['nom'] ?> </b> </div>
-            <div class="textany"><?php echo $infometier['metier'] ?></div>
+            <div class="nom"> <b><?php echo $info->get_nom(); ?> </b> </div>
+            <div class="textany"><?php echo $info->get_metier(); ?></div>
         </div>
     </div>
 </div>
-</div>
+</div> 
 </body>
 </html>

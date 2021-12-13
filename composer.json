@@ -1,0 +1,13 @@
+{
+    "name": "pascal/my_cv",
+    "description": "cv2021",
+    "autoload": {
+        "psr-4": {
+            "Pascal\\MyCv\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

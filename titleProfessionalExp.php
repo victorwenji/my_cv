@@ -11,7 +11,7 @@
         <div class="titleBar">   
             <div class="imageText">
                 <img src="image/real_estate_80px.png" alt="" class="geantIcon">
-                <div class="titleText"><?php echo $titleProfessionalExp[0]; ?></div>
+                <div class="titleText"><?php echo $titleProfessionalExp[0]; ?><?php echo"la dure est de $total ans."?></div>
             </div>
             <img src="image/menu_2_24px.png" alt="">
         </div>

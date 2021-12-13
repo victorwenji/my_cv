@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title></title>
 </head>
 <body>
@@ -12,7 +13,31 @@
             <center>
                 <img src="image/icons8_sent.ico" alt="" class="sent">
             </center>
-        </div> 
+        </div>
+       
+            <div class="Buttonsent1" id="Buttonsent1" style="">
+                <center>
+                    <a href="sendcode.php">
+                        <img src="image/R.png" alt="" class="sent">
+                    </a>
+                </center>
+            </div>
+            <div class="Buttonsent2" id="Buttonsent2">
+                <center>
+                    <img src="image/Telegram.png" alt="" class="sent">
+                </center>
+            </div>
+            <div class="Buttonsent3" id="Buttonsent3">
+                <center>
+                    <img src="image/telecharger.png" alt="" class="sent">
+                </center>
+            </div>
+            <div class="Buttonsent4" id="Buttonsent4">
+                <center>
+                    <img src="image/WhatsApp.png" alt="" class="sent">
+                </center>
+            </div>
+            <br>
         <div class="birthday" id="birthday">
             <img src="image/birthday_cake_24px.png" alt="" class="leftIcon">
             <div style="margin-left: 20px; width:100%;">
@@ -55,3 +80,37 @@
     </div> 
 </body>
 </html>
+
+  <!--  <ul class="premier">
+            <li class="deroulant">
+               <a href="#">
+                   <div class="Buttonsent" id="Buttonsent">
+                        <center>
+                            <img src="image/icons8_sent.ico" alt="" class="sent">
+                        </center>
+                    </div> 
+                </a>
+                <ul class="sous">
+                    <li>
+                        <div class="circleButton" id="circleButton">
+                            <img src="image/telecharger.png" alt="" class="sent">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circleButton" id="circleButton">
+                            <img src="image/mail.jpg" alt="" class="sent">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circleButton" id="circleButton">
+                            <img src="image/Telegram.png" alt="" class="sent">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circleButton" id="circleButton">
+                            <img src="image/WhatsApp.png" alt="" class="sent">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul> -->

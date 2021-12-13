@@ -31,6 +31,62 @@ body{
     top: 42%;
     right: 60%;
 }
+.Buttonsent1 {
+    background-color: #300bab;
+    border-style: none;
+    border-radius: 100%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+    /*margin-top: -5%; */
+    top: 42%;
+    right: 66%;
+}
+.Buttonsent2 {
+    background-color: #24AAEB;
+    border-style: none;
+    border-radius: 100%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+    /* margin-top: -5%; */
+    top: 42%;
+    right: 72%;
+}
+.Buttonsent3 {
+    background-color: #300bab;
+    border-style: none;
+    border-radius: 100%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+    /* margin-top: -5%; */
+    top: 42%;
+    right: 78%;
+}
+.Buttonsent4 {
+    background-color: #300bab;
+    border-style: none;
+    border-radius: 100%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(101, 101, 105, 0.555);
+    /* margin-top: -5%; */
+    top: 42%;
+    right: 84%;
+}
 
 .bacgroundimage{
    /* background: linear-gradient(rgba(32, 32, 221, 0.5), rgba(32, 32, 221, 0.5));*/
@@ -72,6 +128,9 @@ body{
 .sent{
     height: 40px;
     width: 40px;
+}
+.liatebtn{
+flex-direction: row;
 }
 .paersonalinformation{
     display: flex;
@@ -401,6 +460,178 @@ body{
     background-color: rgb(54, 53, 53);
     border-radius: 20px;
 }*/
+
+
+/*css du bouton partager*/
+ul{
+    /*width:100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;*/
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #cc33ff;
+    opacity: 0.4;
+}
+
+ul li{
+    float: left;
+    width:25%;
+    text-align: center;
+    position:relative;
+}
+ul::after{
+    counter:"";
+    display:table;
+    clear: both;
+}
+a{
+    display:block;
+    text-decoration:none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px rgb(37, 20, 162);
+    background-color: #cc33ff;
+    opacity: 0.4;
+    position: absolute;
+    width:100%;
+    z-index:1000;
+}
+.premier{
+    background-color: transparent;
+    opacity: 0.4;
+}
+ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: blue;
+} 
+ul li{
+    float: left;
+    width: 25%;
+    text-align:center;
+    position:relative;
+}
+
+*{box-sizing: border-box;}
+body{
+      
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+      text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    text-align: center;
+    background-color: #e73306;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+  
+
+  
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #8842d5;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+
 @media (max-width: 600px) {
     .contentAll {
         height: 100%;

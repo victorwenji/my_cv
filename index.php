@@ -1,4 +1,7 @@
 <?php
+    ob_start();
+    
+            
     //jai decider de regrouper les information en groupe de div!!
     //pour ca j'utilise des tableau multi dimentionelle(des tableau dans des tableau dans des tableau 
     //pouvant contenir autre chose qu des tableau).
@@ -7,6 +10,7 @@
         ['nom' => 'JUNIOR ESSONO'],
         ['metier' => 'Architecte logiciel / DevOps']
     ];
+    
     $infoNom = $paersonalinformation[0];
     $infometier =  $paersonalinformation[1];
 
@@ -155,7 +159,34 @@
     $listeD31 = $bigscroll[11];
     $listeE11 = $bigscroll[12];
     $listeE21 = $bigscroll[13];
-    $listeE31 = $bigscroll[14];
+    $listeE31 = $bigscroll[14]; 
+
+    //determination du nombre d'anne d'experience professionnelle 
+    @$datedebut = new DateTime('2012-12');
+    @$datefin = new DateTime(Date('y-m-d'));
+    @$total = $datefin->diff($datedebut)->format("%y");
+
+    //lundi 06 decembre 2021 creation des classe pour le stockage des information 
+
+    class Paersonalinformation {
+        public $nom;
+        public $metier;
+
+        function __construct($nom, $metier) {
+            $this->nom = $nom;
+            $this->metier = $metier;
+        }
+        function get_nom() {
+            return $this->nom;
+        }
+        function get_metier() {
+            return $this->metier;
+        }
+    }
+    $info = new Paersonalinformation("JUNIOR ESSONO", "Architecte logiciel / DevOps");
+    /*echo $apple->get_nom();
+    echo $apple->get_metier();*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -167,6 +198,9 @@
     <title>My_cv</title>
 </head>
 <body>
+    <?php
+        $content=ob_get_contents();
+    ?>
     <div class="contentAll" id="contentAll">
         <div class="leftcontent" id="leftcontent">
             <?php 
