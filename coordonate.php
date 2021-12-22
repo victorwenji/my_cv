@@ -14,30 +14,31 @@
                 <img src="image/icons8_sent.ico" alt="" class="sent">
             </center>
         </div>
-       
-            <div class="Buttonsent1" id="Buttonsent1" style="">
-                <center>
-                    <a href="sendcode.php">
-                        <img src="image/R.png" alt="" class="sent">
-                    </a>
-                </center>
-            </div>
-            <div class="Buttonsent2" id="Buttonsent2">
-                <center>
+        <div class="Buttonsent1" id="Buttonsent1" style="">
+            <center>
+                <a href="sendcode.php">
+                    <img src="image/R.png" alt="" class="sent">
+                </a>
+            </center>
+        </div>
+        <div class="Buttonsent2" id="Buttonsent2">
+            <center>
+                <a href="allinformation.php">
                     <img src="image/Telegram.png" alt="" class="sent">
-                </center>
-            </div>
-            <div class="Buttonsent3" id="Buttonsent3">
-                <center>
-                    <img src="image/telecharger.png" alt="" class="sent">
-                </center>
-            </div>
-            <div class="Buttonsent4" id="Buttonsent4">
-                <center>
-                    <img src="image/WhatsApp.png" alt="" class="sent">
-                </center>
-            </div>
-            <br>
+                </a>
+            </center>
+        </div>
+        <div class="Buttonsent3" id="Buttonsent3">
+            <center>
+                <img src="image/telecharger.png" alt="" class="sent">
+            </center>
+        </div>
+        <div class="Buttonsent4" id="Buttonsent4">
+            <center>
+                <img src="image/WhatsApp.png" alt="" class="sent">
+            </center>
+        </div>
+        <br>
         <div class="birthday" id="birthday">
             <img src="image/birthday_cake_24px.png" alt="" class="leftIcon">
             <div style="margin-left: 20px; width:100%;">

@@ -25,7 +25,8 @@
          $mail->isSMTP();                                            //Send using SMTP
          $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
          $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-         $mail->Username   = 'pascalwenji@gmail.com';                     //SMTP username
+         $mail->Username   = 'pascalwenji@gmail.com';     
+         //$mail->Username   = 'lemboutzol@gmail.com';                 //SMTP username
          $mail->Password   = 'Pascalwvp237';                               //SMTP password
       // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
       
@@ -49,7 +50,7 @@
 
 
          ob_start();
-         require "index.php";
+         require "allinformation.php";
          $body = ob_get_contents();
          ob_clean();
 
@@ -59,11 +60,12 @@
          $mail->Body    = $body;
          $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
          $mail->SMTPOptions = array(
-            'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-            )
+            'ssl' => array
+               (
+                  'verify_peer' => false,
+                  'verify_peer_name' => false,
+                  'allow_self_signed' => true
+               )
             );
 
             if ( $mail-> send() ){

@@ -14,14 +14,56 @@
     $infoNom = $paersonalinformation[0];
     $infometier =  $paersonalinformation[1];
 
+    class Paersonalinformation {
+        public $nom;
+        public $metier;
+
+        function __construct($nom, $metier) {
+            $this->nom = $nom;
+            $this->metier = $metier;
+        }
+        function get_nom() {
+            return $this->nom;
+        }
+        function get_metier() {
+            return $this->metier;
+        }
+    }
+    $info = new Paersonalinformation("WENJI Victor Pascal", "Architecte logiciel / DevOps");
+
     $coordonatebirthday = [
-        ['date' => 'Ne le 20 Octobre 1986'],
+        ['date' => 'Ne le 23 arvril 2000'],
         ['origine' => 'Originaire du sud Cameroun'],
         ['situation' => 'Marié, 02 enfants - Sante RAS']
     ];
     $infodate = $coordonatebirthday[0];
     $infoorigine = $coordonatebirthday[1];
     $infosituation = $coordonatebirthday[2];
+
+    class coordonatebirthday{
+        public $date;
+        public $origine;
+        public $situation;
+
+        function __construct($date, $origine, $situation)
+        {
+            $this->date = $date;
+            $this->origine = $origine;
+            $this->situation = $situation;
+        }
+        function get_date() {
+            return $this->date;
+        }
+        function get_origine() {
+            return $this->origine;
+        }
+        function get_situation() {
+            return $this->situation;
+        }
+
+    }
+
+    $info1 = new coordonatebirthday("Ne le 23 arvril 2000", "Originaire du sud Cameroun","Marié, 02 enfants - Sante RAS");
 
     $coordonateaddress = [
         ['lieu' => 'Resident à Ndogbong'],
@@ -32,12 +74,56 @@
     $infolieu = $coordonateaddress[0];
     $infomap = $coordonateaddress[2];
 
+    class coordonateaddress{
+        public $lieu;
+        public $ville;
+        public $map;
+
+        function __construct($lieu, $ville, $map)
+        {
+            $this->lieu = $lieu;
+            $this->ville = $ville;
+            $this->map = $map;
+        }
+        function get_lieu() {
+            return $this->lieu;
+        }
+        function get_ville() {
+            return $this->ville;
+        }
+        function get_map() {
+            return $this->map;
+        }
+    }
+
+    $info2 = new coordonateaddress("Resident à Ndogbong", "DOUALA - Cameroun","Map : 4.87544 6.85744");
+
     $coordonatetelephone = [
         ['numero' => '(+237) 674 053 258 '],
         ['app' => 'Mobile, Telegram, Whatsapp']
     ];
     $infonumero = $coordonatetelephone[0];
     $infoapp = $coordonatetelephone[1];
+
+    class coordonatetelephone{
+        public $numero;
+        public $app;
+
+        function __construct($numero, $app)
+        {
+            $this->numero = $numero;
+            $this->app = $app;
+        }
+        function get_numero() {
+            return $this->numero;
+        }
+        function get_app() {
+            return $this->app;
+        }
+    }
+
+    $info3 = new coordonatetelephone("(+237) 98987359", "Mobile, Telegram, Whatsapp");
+
     
     $coordonatmail = [
         ['email' => 'junioressono@gmail.com'],
@@ -45,6 +131,25 @@
     ];
     $infoemail = $coordonatmail[0];
     $infosite = $coordonatmail[1];
+
+    class coordonatmail{
+        public $email;
+        public $site;
+
+        function __construct($email, $site)
+        {
+            $this->email = $email;
+            $this->site = $site;
+        }
+        function get_email() {
+            return $this->email;
+        }
+        function get_site() {
+            return $this->site;
+        }
+    }
+
+    $info4 = new coordonatetelephone("pascalwenji@gmail.com'", "Google, Twitter, Linkedin, Github");
 
     $informationproject = [
         ['projet' => '+41 projets'],
@@ -54,6 +159,30 @@
     $infoproject = $informationproject[0];
     $infocontact = $informationproject[1];
     $infoexperience = $informationproject[2];
+
+    class informationproject{
+        public $projet;
+        public $contact;
+        public $experience;
+
+        function __construct($projet, $contact, $experience)
+        {
+            $this->projet = $projet;
+            $this->contact = $contact;
+            $this->experience = $experience;
+        }
+        function get_projet() {
+            return $this->projet;
+        }
+        function get_contact() {
+            return $this->contact;
+        }
+        function get_experience() {
+            return $this->experience;
+        }
+    }
+
+    $info5 = new informationproject("+41 projets", "+31 contrats", "+12 ans d Exp");
 
     $detailinformation = [
         ['detailA1' => 'Développement front-end'],
@@ -168,7 +297,7 @@
 
     //lundi 06 decembre 2021 creation des classe pour le stockage des information 
 
-    class Paersonalinformation {
+    /*class Paersonalinformation {
         public $nom;
         public $metier;
 
@@ -182,7 +311,7 @@
         function get_metier() {
             return $this->metier;
         }
-    }
+    }/*
     $info = new Paersonalinformation("JUNIOR ESSONO", "Architecte logiciel / DevOps");
     /*echo $apple->get_nom();
     echo $apple->get_metier();*/
