@@ -109,6 +109,8 @@
 
         $info = new Paersonalinformation("WENJI Victor Pascal", "Architecte logiciel / DevOps");
         
+        echo '<br>';
+        echo '<br>';
         echo $info->get_nom();
         echo '<br>';
         echo $info->get_metier();

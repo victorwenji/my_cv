@@ -1,4 +1,4 @@
-<?php session_start()?>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,15 +7,15 @@
 	</head>
 <body>
             <center>
-                <h3>envoi des informations par MAIL</h3>
+                <h3>Envoi des information par whatsapp</h3>
             
-                <form method="post" action="sent.php">
+                <form method="post" action="sentcodewhatsapp.php">
                     <div class="container">
-                        <label>Email:</label>
-                        <input type="email"placeholder="entrez votre email" name="email" required="required"/>
+                        <label>Telephone:</label>
+                        <input type="text"placeholder="entrez votre numero" name="email" required="required"/>
                         <br>
                         <label>Subject</label>
-                        <input type="text" placeholder="le suject du mail" name="subject" required="required"/>
+                        <input type="text" placeholder="le suject " name="subject" required="required"/>
                     </div>
                     <!--<div class="form-group">
                         <label>Message</label>
@@ -29,22 +29,7 @@
                 </form>
             </center>
 			<br />
-			<?php
-				if(ISSET($_SESSION['status'])){
-					if($_SESSION['status'] == "ok"){
-			?>
-						<div class="alert alert-info"><?php echo $_SESSION['result']?></div>
-			<?php
-					}else{
-			?>
-						<div class="alert alert-danger"><?php echo $_SESSION['result']?></div>
-			<?php
-					}
-					
-					unset($_SESSION['result']);
-					unset($_SESSION['status']);
-				}
-			?>
+			
 		</div>
 	</div>
 </body>

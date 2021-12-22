@@ -35,6 +35,7 @@
         </div>
         <div class="Buttonsent4" id="Buttonsent4">
             <center>
+                <a href="sentwhatsapp.php"></a>
                 <img src="image/WhatsApp.png" alt="" class="sent">
             </center>
         </div>
