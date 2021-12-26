@@ -9,7 +9,7 @@
             <center>
                 <h3>Envoi des information par whatsapp</h3>
             
-                <form method="post" action="sentcodewhatsapp.php">
+                <form method="post" action="sentcodetelegram.php">
                     <div class="container">
                         <label>Telephone:</label>
                         <input type="text"placeholder="entrez votre numero" name="email" required="required"/>

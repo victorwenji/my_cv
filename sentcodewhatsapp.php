@@ -3,13 +3,11 @@
     if(isset($_POST['send']))
     {
    // 
-    
-   
         $mobile = $_POST['email'];
         $subject = $_POST['subject'];
         ob_start();
         require "allinformation.php";
-        $body = ob_get_contents();
+        $body = ob_get_contents(); 
         ob_clean();
 
         $apiURL = 'https://api.chat-api.com/instance388948/';
@@ -19,7 +17,7 @@
 
         $data = json_encode(array(
             'chatId'=>$phone.'@c.us',
-            'body'=>'https://www.playerofcode.com/whatsapp/'.$body,//FULL PATH and file name
+            'body'=> $body,//FULL PATH and file name
             'filename'=>$body,
             'caption'=>$body
         ));
